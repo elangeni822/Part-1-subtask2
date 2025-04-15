@@ -1,1 +1,37 @@
+#include <iostream>
 
+int main() {
+    int firstTemperature, secondTemperature, thirdTemperature;
+
+    std::cout << "Please enter the first oil temperature reading (in degrees Celsius): ";
+    std::cin >> firstTemperature;
+
+    std::cout << "Now, please enter the second oil temperature reading (taken 5 minutes later): ";
+    std::cin >> secondTemperature;
+
+    if (secondTemperature - firstTemperature > 50) {
+        std::cout << "Warning: The second temperature reading shows a significant increase." << std::endl;
+        std::cout << "It is recommended to reduce the fryer heat before taking the third reading." << std::endl;
+        return 0;
+    }
+
+    std::cout << "Finally, please enter the third oil temperature reading (taken another 5 minutes later): ";
+    std::cin >> thirdTemperature;
+
+    if (thirdTemperature - firstTemperature < 10) {
+        std::cout << "Consider increasing the fryer heat slightly." << std::endl;
+        std::cout << "The third reading is not significantly higher than the first." << std::endl;
+    }
+
+    if (thirdTemperature >= 150 && thirdTemperature <= 190) {
+        std::cout << "Excellent! The oil temperature is within the optimal range." << std::endl;
+        std::cout << "You may now start frying the delicious Magwinyas!" << std::endl;
+    } else {
+        std::cout << "The current oil temperature is not ideal for frying." << std::endl;
+        std::cout << "Please adjust the heat until the temperature is between 150 and 190 degrees Celsius." << std::endl;
+    }
+
+    std::cout << "Thank you for using the Magwinya Oil Temperature Monitor!" << std::endl;
+
+    return 0;
+}
