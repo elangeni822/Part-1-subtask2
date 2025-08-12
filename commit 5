@@ -1,0 +1,5 @@
+chore: Add input buffer clearing and improve user interaction
+
+- Used std::cin.ignore() with std::numeric_limits to flush input buffer
+- Prevents errors when mixing string and number inputs
+- Ensures smooth user experience across multiple inputs
