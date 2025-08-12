@@ -1,0 +1,5 @@
+feat: Add input validation for hexadecimal input
+
+- Implemented isValidHex() function to check if input is a valid hex number
+- Prevents invalid letters/symbols from causing undefined behavior
+- Integrated validation into case 4 of the menu
