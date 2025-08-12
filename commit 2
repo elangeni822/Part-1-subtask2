@@ -1,0 +1,5 @@
+fix: Complete hexadecimalToDecimal function and handle invalid characters
+
+- Finished the loop to convert hex to decimal
+- Used std::toupper and std::isxdigit to validate hex digits
+- Returns -1 for invalid hex input with proper error message
