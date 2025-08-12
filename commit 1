@@ -1,0 +1,5 @@
+feat: Add input validation for binary input in binaryToDecimal conversion
+
+- Implemented isValidBinary() helper function
+- Prevented invalid characters (anything other than '0' and '1') from being processed
+- Improved reliability of binary to decimal conversion
