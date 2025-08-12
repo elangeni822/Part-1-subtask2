@@ -1,0 +1,4 @@
+refactor: Move binary and hex validation into separate helper functions
+
+- Improved code readability and reusability
+- Keeps main() logic clean by offloading validation checks
